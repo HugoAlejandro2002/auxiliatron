@@ -5,11 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-<<<<<<< HEAD
     "e2e": "cypress run",
     "cypress": "cypress open",
-=======
->>>>>>> 214ab2044d107cd9d5190caaae4056443be0aa58
     "test": "jest",
     "start": "concurrently \"npm run dev\" \"npm run json-server\"",
     "build": "tsc && vite build",
