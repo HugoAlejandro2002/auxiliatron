@@ -1,5 +1,6 @@
 import { ThemeProvider, createTheme, CssBaseline, Container, Box } from '@mui/material';
 import Calculator from "./components/Calculator";
+
 const theme = createTheme({
   palette: {
     primary: {
