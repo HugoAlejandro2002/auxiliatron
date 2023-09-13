@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 import { ThemeProvider, createTheme, CssBaseline, Container, Box } from '@mui/material';
 import Calculator from "./components/Calculator";
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -52,16 +50,6 @@ function App() {
         </Box>
       </Container>
     </ThemeProvider>
-=======
-import "./App.css";
-import Component from "./components/TitleCard";
-import Pokedeck from './components/Pokedeck';
-function App() {
-  return (
-    <>
-      <Component name="Paul Landaeta"/>
-    </>
->>>>>>> 214ab2044d107cd9d5190caaae4056443be0aa58
   );
 }
 
