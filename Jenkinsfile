@@ -11,12 +11,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh 'cd client/admin && npm run test'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                sh 'Deploying....'
             }
         }
     }

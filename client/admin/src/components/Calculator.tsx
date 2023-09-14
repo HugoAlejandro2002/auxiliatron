@@ -123,7 +123,7 @@ const Calculator: React.FC = () => {
           <Button variant="contained" color="secondary" onClick={handleClear}>
             Borrar
           </Button>
-          <Button variant="contained" color="default" onClick={handleMemory}>
+          <Button variant="contained" color="secondary" onClick={handleMemory}>
             Guardar en Memoria
           </Button>
         </Grid>

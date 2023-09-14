@@ -1,4 +1,4 @@
-const knex = require('knex')(require('../config/knex-pg'));
+const knex = require('knex')(require('../config/knex-pg').development);
 
 class SubjectRepository {
   async getAllSubjects() {

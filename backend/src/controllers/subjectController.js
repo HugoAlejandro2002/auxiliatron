@@ -23,13 +23,23 @@ exports.createSubject = async (req, res) => {
 
 exports.updateSubject = async (req, res) => {
   const id = req.params.id;
-  const subject = req.body;
-  await subjectService.updateSubject(id, subject);
-  res.json({ message: 'Subject updated' });
+  const subject = await subjectService.getSubjectById(id);
+  if (subject) {
+    const updatedSubject = req.body;
+    await subjectService.updateSubject(id, updatedSubject);
+    res.json({ message: 'Subject updated' });
+  } else {
+    res.status(404).json({ message: 'Subject not found' });
+  }
 };
 
 exports.deleteSubject = async (req, res) => {
   const id = req.params.id;
-  await subjectService.deleteSubject(id);
-  res.json({ message: 'Subject deleted' });
+  const subject = await subjectService.getSubjectById(id);
+  if (subject) {
+    await subjectService.deleteSubject(id);
+    res.json({ message: 'Subject deleted' });
+  } else {
+    res.status(404).json({ message: 'Subject not found' });
+  }
 };

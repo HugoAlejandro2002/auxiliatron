@@ -7,7 +7,8 @@
     "test": "mocha src/test/**/*.test.js --exit",
     "start": "nodemon index.js",
     "lint-fix": "eslint . --fix",
-    "migrate-create": "knex --knexfile ./src/config/knex-pg.js migrate:make"
+    "migration":"knex migrate:latest --knexfile ./src/config/knex-pg.js",
+    "migrate-create": "knex --knexfile ./src/config/knex-pg.js migrate:make create_subjects_table"
   },
   "author": "UPB",
   "license": "MIT",
