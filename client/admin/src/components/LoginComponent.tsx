@@ -8,12 +8,12 @@ const LoginComponent = () => {
         password: '',
     });
 
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:any) => {
         e.preventDefault();
         // Aquí puedes agregar la lógica para enviar los datos de inicio de sesión.
         // Por ejemplo, puedes hacer una solicitud a tu servidor.
