@@ -1,7 +1,7 @@
 describe('Calculator', () => {
   beforeEach(() => {
     // Visita la página donde se encuentra tu calculadora
-    cy.visit('http://localhost:5173');
+    cy.visit('https://auxiliatron-wuy3ib7ad-hugoalejandro2002.vercel.app/');
   });
 
   it('should add numbers correctly', () => {
